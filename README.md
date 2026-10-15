@@ -6,7 +6,9 @@ A rover has to drive about 76 km across a lunar region, between craters and ridg
 The problem comes from the final exercise of the Space Robotic Systems course at Sapienza University of Rome (2020/2021).
 This repository is a rewrite from scratch of my original solution: it fixes several errors of the 2021 code and shows that the standard extended Kalman filter is badly overconfident on this problem, and how to make it consistent.
 
-![Trajectory reconstructed by the Kalman filter](results/figures/task3_ekf.png)
+<p align="center">
+  <img src="results/figures/task3_ekf.png" width="340" alt="Trajectory reconstructed by the Kalman filter on the lunar map">
+</p>
 
 ## The problem
 
