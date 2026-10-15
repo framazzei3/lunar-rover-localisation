@@ -75,7 +75,7 @@ save_figure(f, file);
 end
 
 function f = map_figure(p)
-f = figure('Color', 'w', 'Position', [100 100 640 960]);
+f = figure('Color', 'w', 'Position', [100 100 640 1120]);
 imshow(imread(p.map_file), 'XData', p.map_x, 'YData', p.map_y);
 hold on
 axis on
@@ -93,13 +93,15 @@ end
 end
 
 function map_legend(h, labels)
-legend(h, labels, 'TextColor', 'w', 'EdgeColor', 'w', 'Color', 'none', 'Location', 'northwest');
+% Below the map, so it hides nothing; dark box, since some lines are white
+legend(h, labels, 'Location', 'southoutside', 'NumColumns', 2, ...
+    'TextColor', 'w', 'EdgeColor', [0.3 0.3 0.3], 'Color', [0.15 0.15 0.15]);
 end
 
 function save_figure(f, file)
 if isprop(f, 'Theme')
     f.Theme = 'light';      % newer MATLAB releases may default to dark
 end
-exportgraphics(f, file, 'Resolution', 200);
+exportgraphics(f, file, 'Resolution', 300);
 close(f);
 end
