@@ -1,0 +1,13 @@
+# Course assignment: kept locally, not redistributed
+docs/
+
+# MATLAB
+*.asv
+*.m~
+*.mat
+slprj/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

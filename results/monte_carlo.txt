@@ -1,0 +1,9 @@
+Monte Carlo, 50 runs, 567 samples each
+Mean NEES should be 3, with 95% bounds [2.36, 3.72]
+
+Filter                                 Mean NEES  Median NEES   Inside 95%    RMS error   Max error
+EKF                                     449301.1      1841.16        14.0%      179.1 m    1517.9 m
+Iterated EKF                              6466.3        33.63        32.6%       69.7 m     600.6 m
+OC-EKF                                   21370.9        64.63        32.8%       82.0 m     664.0 m
+Second order OC-EKF                       1925.3         5.07        59.2%       56.6 m     521.1 m
+Second order OC-EKF, underweighting         32.9         3.00        78.2%       50.8 m     471.5 m

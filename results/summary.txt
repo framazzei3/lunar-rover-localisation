@@ -1,0 +1,19 @@
+Task 1
+  Arrival at target 1              28.62 h
+  Departure from target 1          29.12 h
+  Arrival at target 2              45.27 h
+  Path length                      75.87 km
+  Ridge clearance, driven path      2.49 km
+Task 2, dead reckoning
+  Final position error             5.714 km
+  Maximum position error           5.882 km
+  Final 1 sigma (major axis)       8.836 km
+  Final sqrt(det P)             3.12e+00
+  Ridge clearance, 95% ellipses    0.000 km
+Task 3, filter 'oc2', underweighting 1
+  Lidar updates                      423 of 566 samples
+  Final position error              76.9 m
+  Maximum position error           368.4 m
+  Maximum 1 sigma (major axis)     224.0 m
+  Final sqrt(det P)             5.16e-09
+  Ridge clearance, 95% ellipses    2.416 km
