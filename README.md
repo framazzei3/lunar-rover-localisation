@@ -3,9 +3,6 @@
 Path planning, control and onboard localisation of a simulated lunar rover, in MATLAB.
 A rover has to drive about 76 km across a lunar region, between craters and ridges, to two targets, and know where it is along the way.
 
-The problem comes from the final exercise of the Space Robotic Systems course at Sapienza University of Rome (2020/2021).
-This repository is a rewrite from scratch of my original solution: it fixes several errors of the 2021 code and shows that the standard extended Kalman filter is badly overconfident on this problem, and how to make it consistent.
-
 <p align="center">
   <img src="results/figures/task3_ekf.png" width="340" alt="Trajectory reconstructed by the Kalman filter on the lunar map">
 </p>
