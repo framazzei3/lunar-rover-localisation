@@ -51,7 +51,9 @@ All problem data and tuning parameters are in [`src/rover_parameters.m`](src/rov
 Odometry alone is not safe over tens of kilometres: the error grows without bound.
 With lidar updates the uncertainty grows only on the stretches without landmarks and collapses at the next measurement.
 
-![Position error and 1 sigma uncertainty](results/figures/position_error.png)
+<p align="center">
+  <img src="results/figures/position_error.png" width="600" alt="Position error and 1 sigma uncertainty of dead reckoning and of the Kalman filter">
+</p>
 
 ## Filter consistency
 
