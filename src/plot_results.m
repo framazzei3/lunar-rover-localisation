@@ -75,7 +75,7 @@ save_figure(f, file);
 end
 
 function f = map_figure(p)
-f = figure('Color', 'w', 'Position', [100 100 640 1120]);
+f = figure('Color', 'w', 'Position', [100 100 980 960]);
 imshow(imread(p.map_file), 'XData', p.map_x, 'YData', p.map_y);
 hold on
 axis on
@@ -93,8 +93,8 @@ end
 end
 
 function map_legend(h, labels)
-% Below the map, so it hides nothing; dark box, since some lines are white
-legend(h, labels, 'Location', 'southoutside', 'NumColumns', 2, ...
+% Beside the map, so it hides nothing; dark box, since some lines are white
+legend(h, labels, 'Location', 'eastoutside', ...
     'TextColor', 'w', 'EdgeColor', [0.3 0.3 0.3], 'Color', [0.15 0.15 0.15]);
 end
 

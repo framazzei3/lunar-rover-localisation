@@ -4,7 +4,7 @@ Path planning, control and onboard localisation of a simulated lunar rover, in M
 A rover has to drive about 76 km across a lunar region, between craters and ridges, to two targets, and know where it is along the way.
 
 <p align="center">
-  <img src="results/figures/task3_ekf.png" width="340" alt="Trajectory reconstructed by the Kalman filter on the lunar map">
+  <img src="results/figures/task3_ekf.png" width="520" alt="Trajectory reconstructed by the Kalman filter on the lunar map">
 </p>
 
 ## The problem
