@@ -84,15 +84,6 @@ Mean normalised estimation error squared (NEES) of the pose over 50 Monte Carlo 
 
 The default filter is consistent most of the time; the remaining outliers come right after the longest stretches without landmarks, where the true uncertainty is a thin arc around the landmark that no Gaussian describes well.
 
-## Changes from the 2021 solution
-
-- Steering angle of the second leg computed from the first leg's data.
-- Lidar noise reseeded at every call, so it was the same number at every measurement.
-- Ellipses scaled by the chi square quantile instead of its square root (2.4 times too large at 95%).
-- Odometer model moving along the initial heading of each step instead of the mean heading of the arc.
-- Speed label in km/s instead of km/h; integral of the following error starting from 0.5 instead of 0; no anti windup; negative speeds allowed; bearing innovation not wrapped; odometer noise added while parked.
-- Dependence on the Statistics Toolbox removed.
-
 ## References
 
 - J. J. Craig, *Introduction to Robotics: Mechanics and Control*, Pearson (trajectories with parabolic blends).
